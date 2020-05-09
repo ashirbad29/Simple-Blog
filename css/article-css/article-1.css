@@ -13,7 +13,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 45px auto 200px;
+    grid-template-rows: 45px auto auto;
     grid-template-areas: "nav-bar nav-bar nav-bar"
         ". article ."
         "footer footer footer";

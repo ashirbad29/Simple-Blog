@@ -30,7 +30,7 @@ p {
 .container {
     display: grid;
     grid-template-columns: 10% 55% 25% 10%;
-    grid-template-rows: 45px 10vh auto 150px 200px;
+    grid-template-rows: 45px 10vh auto 150px auto;
 
     grid-template-areas: "nav-bar nav-bar nav-bar nav-bar"
         "main-header main-header main-header main-header"
