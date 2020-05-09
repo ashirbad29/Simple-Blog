@@ -3,6 +3,7 @@
 @import url("/css/components/side-bar.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("../components/author-info.css");
 
 body {
     margin: 0;
@@ -65,23 +66,7 @@ p {
     padding: 3px;
 }
 
-/*AUTHOR INFO*/
-.author-info {
-    border: 1px solid #eee;
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
 
-.author-img {
-    border: 3px solid #ffa500;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
-
-}
 
 .posts-btn a {
     text-decoration: none;

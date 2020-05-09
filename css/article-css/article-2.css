@@ -1,4 +1,6 @@
 @import url("/css/article-css/article-1.css");
+@import url("../components/author-info.css");
+
 
 a {
     text-decoration: none;
