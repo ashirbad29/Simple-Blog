@@ -5,6 +5,7 @@
     align-items: center;
     padding-left: 10%;
     box-shadow: 0 2px 7px -6px black;
+    background-color: #4DB2EC;
 }
 
 .nav-bar-links {
@@ -19,7 +20,7 @@
 }
 
 .nav-bar-links:hover {
-    color: red;
+    color: #fff;
     transition: all ease 1s;
 }
 

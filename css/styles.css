@@ -1,6 +1,9 @@
 @import url("/css/components/nav-bar.css");
 @import url("/css/components/footer.css");
 @import url("/css/components/side-bar.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 body {
     margin: 0;
@@ -11,6 +14,17 @@ body {
 
 a:hover{
     color: red;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -39,13 +53,11 @@ a:hover{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #eee;
-    border-left: 3px solid red;
 
 }
 
 .header-heading {
     font-weight: 200;
-    color: red;
 }
 
 /*Articles*/
@@ -69,9 +81,8 @@ a:hover{
 }
 
 .read-more:hover {
-    background-color:red;
-    color: #fff;
-    transition: all ease 1s;
+    background-color: orange;
+    color: #000000;
 }
 
 .article {
@@ -79,7 +90,7 @@ a:hover{
     border: 1px solid #eee;
     padding: 10px;
     margin-bottom: 20px;
-    border-left: 3px solid red;
+    border-left: 3px solid #4DB2EC;
 }
 
 
