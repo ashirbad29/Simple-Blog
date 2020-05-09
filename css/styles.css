@@ -1,0 +1,86 @@
+@import url("/css/components/nav-bar.css");
+@import url("/css/components/footer.css");
+@import url("/css/components/side-bar.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+a:hover{
+    color: red;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 55% 25% 10%;
+    grid-template-rows: 45px 10vh auto 150px 200px;
+
+    grid-template-areas: "nav-bar nav-bar nav-bar nav-bar"
+        "main-header main-header main-header main-header"
+        ". content-area side-bar ."
+        ". about about ."
+        "footer footer footer footer";
+}
+
+#main-header,
+#nav-bar,
+.side-bar
+{
+    padding-left: 10%;
+}
+
+/* header */
+#main-header {
+    width: 80%;
+    grid-area: main-header;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+    border-left: 3px solid red;
+
+}
+
+.header-heading {
+    font-weight: 200;
+    color: red;
+}
+
+/*Articles*/
+#content-area {
+    grid-area: content-area;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+#about {
+    grid-area: about;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.read-more {
+    background-color: gainsboro;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.read-more:hover {
+    background-color:red;
+    color: #fff;
+    transition: all ease 1s;
+}
+
+.article {
+    width: 80%;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 3px solid red;
+}
+
+
+

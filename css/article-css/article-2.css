@@ -1,0 +1,11 @@
+@import url("/css/article-css/article-1.css");
+
+a {
+    text-decoration: none;
+}
+
+.list-items {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+}

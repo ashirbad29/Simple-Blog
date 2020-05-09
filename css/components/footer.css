@@ -1,0 +1,13 @@
+#footer {
+    grid-area: footer;
+    background-color: #222;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a {
+    padding: 0 15px 0 15px;
+    color: orange;
+}
