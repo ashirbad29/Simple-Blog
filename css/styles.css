@@ -93,5 +93,33 @@ p {
     border-left: 3px solid #4DB2EC;
 }
 
+/*Media Query*/
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 5% auto 5%;
+        grid-template-rows: 35px 8vh auto auto 150px auto;
+    
+        grid-template-areas: "nav-bar nav-bar nav-bar"
+            "main-header main-header main-header"
+            ". content-area ."
+            ". side-bar ."
+            ". about ."
+            "footer footer footer";
+    }
+
+    .side-bar {
+        height: 200px;
+        padding: 8px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 15px;
+    }
+
+}
+
 
 
