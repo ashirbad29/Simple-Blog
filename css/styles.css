@@ -1,10 +1,12 @@
-@import url("/css/components/nav-bar.css");
-@import url("/css/components/footer.css");
-@import url("/css/components/side-bar.css");
+@import "nav-bar.css";
+@import "footer.css";
+@import "side-bar.css";
+
+/*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
+/*global*/
 body {
     margin: 0;
     padding: 0;
@@ -27,6 +29,14 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+#main-header,
+#nav-bar,
+.side-bar
+{
+    padding-left: 10%;
+}
+
+/*GRID CONTAINER*/
 .container {
     display: grid;
     grid-template-columns: 10% 55% 25% 10%;
@@ -39,12 +49,6 @@ p {
         "footer footer footer footer";
 }
 
-#main-header,
-#nav-bar,
-.side-bar
-{
-    padding-left: 10%;
-}
 
 /* header */
 #main-header {

@@ -1,0 +1,126 @@
+/*
+    *This css file is also a template file for all new articles.
+*/
+
+@import "nav-bar.css";
+@import "footer.css";
+@import "side-bar.css";
+@import "author-info.css";
+
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*GLOBAL*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Grid container*/
+.container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 45px auto auto;
+    grid-template-areas: "nav-bar nav-bar nav-bar"
+        ". article ."
+        "footer footer footer";
+}
+
+
+/*HEADING*/
+.main-heading {
+    font-size: 1.7rem;
+}
+
+.main-sub-heading {
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*article*/
+.article {
+
+    grid-area: article;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.article-paragraph {
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 20px;
+}
+.hero-img {
+    width: 90%;
+    height: 100%;
+}
+
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.article-sub-heading {
+    border-left: 3px solid red;
+    padding-left: 10px;
+    font-style: italic;
+    background-color: #eee;
+    padding: 3px;
+}
+
+
+
+.posts-btn a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.posts-btn a:hover {
+    border: 2px solid red;
+}
+
+/*media queries*/
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 3% auto 3%;
+        grid-template-rows: 45px auto auto;
+        grid-template-areas: "nav-bar nav-bar nav-bar"
+            ". article ."
+            "footer footer footer";
+    }
+    .article {
+        width: 95%;
+    }
+    #nav-bar {
+        padding-left: 4%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 15px;
+    }
+    .article-paragraph {
+        font-size: 16px;
+    }
+}
+
