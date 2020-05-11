@@ -27,6 +27,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+blockquote {
+    color: red;
+}
+
 /*Grid container*/
 .container {
     display: grid;
